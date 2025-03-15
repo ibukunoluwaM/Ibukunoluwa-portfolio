@@ -1,0 +1,576 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+body {
+    overflow-x: clip;
+    overflow-y: auto;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    padding: 0 3rem 1rem 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.links-parent {
+    /* width: 65%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    margin-right: 1rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu-btn, .close-btn {
+    display: none;
+}
+
+nav button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+nav button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* .container .backdrop {
+    /* display: none; */
+/* } */
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin: 3rem 0;
+}
+.intro {
+    width: 50%;
+}
+
+.image {
+    width: 50%;
+}
+
+.intro, .image, .about-image, .about {
+    opacity: 0;
+    transform: translateX(-500px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.image, .about {
+    transform: translate(500px);
+}
+
+/* show divs */
+.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.image img {
+    width: 80%;
+}
+
+.intro span {
+    font-weight: 800;
+}
+
+.name {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+.text {
+    line-height: 1.5;
+    color: #777;
+}
+
+.intro a img, .contact a img {
+    width: 50px;
+    display: inline-block;
+    margin-top: 25px;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.intro a img:hover {
+  background-color: #daafaf;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.85rem;
+}
+
+.skills {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 4s ease-in, transform 4s ease-in;
+}
+
+
+.skills-parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 3rem;
+}
+ 
+
+.skills-parent div{
+    border: 1px solid #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-parent .react {
+    width: 90px;
+}
+
+
+
+.qualification {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 1.8rem;
+    margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+/* animation for skllls and qualification */
+.show-skill{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.qualification h2 {
+    width: 80%;
+}
+
+.qualification img {
+    width: 120px;
+}
+
+.qualification .altschool {
+    width: 60px;
+}
+
+.qualification .schools {
+    border: 1px solid #777;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.qualification .top {
+    display: flex;
+    align-items: center;   
+    padding-bottom: 1.5rem;
+}
+
+.qualification .top h2 {
+    margin-left: 1rem;
+}
+
+.qualification p {
+    line-height: 1.5;
+    letter-spacing: 1.3;
+}
+
+
+
+.about-parent {
+    display: flex;
+    align-items: center;
+}
+
+.about-parent .about-image {
+    width: 50%;
+}
+
+.about-parent .about-image img {
+    width: 70%;
+}
+
+.about-parent .about {
+    width: 50%;
+}
+
+.about-parent .about h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.about-parent .about p {
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+/* animation for skllls and qualification */
+
+
+
+.projects h1{
+    margin-bottom: 2.5rem;
+}
+
+.project {
+    width: 85%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin: 2rem auto;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in;
+}
+
+.project.show-skill{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project .project-image {
+   width: 50%; 
+}
+
+.project .project-image img {
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.project .info-project {
+    width: 50%;
+}
+
+.project .info-project h1 {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.project .info-project h2 {
+    margin-bottom: 15px;
+}
+
+.project .info-project p {
+    color: #777;
+    line-height: 1.5;
+    letter-spacing: 1.5;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.project .info-project a img {
+    width: 15px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.contact {
+    width: 100%;
+    margin-top: 1.2rem;
+}
+
+.contact .contact-text {
+    color: #777;
+    text-align: center;
+}
+
+.mail {
+    margin-top: 12px;
+}
+
+.mail span {
+    font-weight: 800;
+}
+
+footer {
+    padding: 2.5rem;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+}
+
+.back-to-top {
+    font-size: 12px;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    background: #000;
+    padding: 14px;
+    border-radius:12px;
+    color: #fff;
+    animation: bounce 2s ease-in-out infinite;
+    cursor: pointer;
+    text-decoration: none;
+    /* letter-spacing: 1.8; */
+    visibility: hidden;
+    z-index: 10;
+}
+
+.visible {
+    visibility: visible;
+}
+
+
+/* .show-skill{
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+
+@keyframes bounce {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+
+@media (min-width: 800px) and (max-width: 1000px) {
+
+    .intro {
+        width: 60%;
+    }
+
+    .image {
+        width: 40%;
+    }
+
+    .name {
+        font-size: 2.2rem;
+    }
+
+    .qualification h2 {
+        width: 70%;
+    }
+
+    .about p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 890px) {
+    body {
+        position: relative;
+    }
+
+    .links-parent {
+        display: none;
+    }
+
+    .links-parent.active {
+        display: flex;
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 300px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* overflow: hidden; */
+        padding: 1.5rem;
+        background: rgb(240, 232, 234);
+        Z-index: 3;
+    }
+
+    .backdrop.active {
+        background-color: hsl(0, 0%, 0%, 0.75);
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -5px;
+        z-index: 2;
+    }
+
+    ul {
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .close-btn {
+        display: block;
+        width: 20px;
+        margin-bottom: 2rem;
+        /* text-align: left; */
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .menu-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav ul li {
+        margin: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .image img {
+        display: inline-block;
+        width: 75%;
+
+    }
+
+
+    /* .name {
+        font-size: 2rem;
+    } */
+
+    .qualification h2 {
+        width:65%;
+    }
+
+    .qualification p {
+        font-size: 13px;
+    }
+
+    .about-parent {
+        flex-direction: column;
+    }
+
+    .about-parent .about-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-parent .about-image img {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-parent .about {
+        width: 100%;
+    }
+
+    .project {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .project .project-image {
+        width: 90%; 
+    }
+
+    .project .project-image img {
+        width: 80%; 
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .project .info-project {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 650px) {
+    body {
+        position: absolute;
+    }
+    .name {
+        font-size: 2rem;
+    }
+
+    .qualification .time {
+        display: none;
+        font-size: 0.75rem;
+    }
+    .qualification h2 {
+        font-size: 1rem;
+    }
+
+ 
+
+    .contact h1 {
+        font-size: 1.4rem;
+    }
+
+    .contact p {
+        font-size: 12px;
+    }
+
+    .about p {
+        font-size: 13px;
+    }
+}
