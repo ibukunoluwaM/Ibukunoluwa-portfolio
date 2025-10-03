@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ibukunoluwa's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/portfolio.png"
+      type="image/x-icon"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -87,6 +92,11 @@
           </div>
 
           <div>
+            <img src="./assets/icons8-tailwindcss-100.png" alt="Tailwind css" />
+            <p>Tailwind CSS</p>
+          </div>
+
+          <div>
             <img src="./assets/icons8-javascript-100.png" alt="javascript" />
             <p>Javascript</p>
           </div>
@@ -97,7 +107,7 @@
           </div>
 
           <div>
-            <img src="./assets/icons8-git-100.png" alt="javascript" />
+            <img src="./assets/icons8-git-100.png" alt="Git" />
             <p>Git</p>
           </div>
 
@@ -112,8 +122,17 @@
 
           <div>
             <img
+              class="react"
+              src="./assets/icons8-nextjs-100.png"
+              alt="nextJs"
+            />
+            <p>NextJS</p>
+          </div>
+
+          <div>
+            <img
               src="./assets/icons8-problem-solving-100.png"
-              alt="javascript"
+              alt="Problem solving"
             />
             <p>Problem Solving</p>
           </div>
@@ -121,7 +140,7 @@
           <div>
             <img
               src="./assets/icons8-people-working-together-90.png"
-              alt="javascript"
+              alt="TeamDriven"
             />
             <p>Team driven</p>
           </div>
@@ -246,23 +265,25 @@
         <!-- second project -->
         <div class="project reverse">
           <div class="project-image">
-            <img src="./assets/screenshot.png" alt="Eduford website" />
+            <img src="./assets/lighthosue.png" alt="Eduford website" />
           </div>
 
           <div class="info-project">
             <h1>02</h1>
-            <h2>Eduford university website</h2>
+            <h2>Fintech Admin Dashboard (Web App)</h2>
 
             <p>
-              This project is a responsive and user-friendly university website
-              designed to provide seamless access to essential academic
-              information. The goal was to create an intuitive and visually
-              appealing interface that enhances user experience for both
-              prospective and current students. Built using HTML and CSS.
+              A fintech admin dashboard web application built with React.js,
+              Vite, and React Router. It includes key sections such as
+              Dashboard, Products, Analytics, Learn, Loans, and ETA Management,
+              providing an organized and intuitive interface for managing
+              fintech operations. <b className="text-white">Currently designed as a web application only
+              (no mobile version yet), </b> it highlights skills in component-based
+              development, routing, and responsive UI design.
             </p>
 
             <a
-              href="https://edufordwebsite-ibukunoluwa.netlify.app/"
+              href="https://lighthousefinances.netlify.app/"
               target="_blank"
             >
               Live demo <img src="./assets/export.png" alt="" />
@@ -270,65 +291,14 @@
           </div>
         </div>
 
-        <!-- third project -->
-        <div class="project">
-          <div class="project-image">
-            <img src="./assets/desktop-preview.jpg" alt="multi-step form" />
-          </div>
-
-          <div class="info-project">
-            <h1>03</h1>
-            <h2>Multi-step Form</h2>
-
-            <p>
-              A dynamic multi-step webpage that collects user input, allows them
-              to choose a monthly or yearly plan, select add-ons, and displays a
-              real-time bill summary based on their choices. The form is
-              properly validated to ensure accurate user input and a smooth
-              experience. Built with HTML, CSS and Javascript.
-            </p>
-
-            <a
-              href="https://multi-step-form-website.netlify.app/"
-              target="_blank"
-              >Live Demo <img src="./assets/export.png" alt="" />
-            </a>
-          </div>
-        </div>
-
-        <!-- fourth project -->
-        <div class="project reverse">
-          <div class="project-image">
-            <img src="./assets/url-shortener.png" alt="url-shortner" />
-          </div>
-
-          <div class="info-project">
-            <h1>04</h1>
-            <h2>URL Shortening App</h2>
-
-            <p>
-              I built a URL shortening application that converts long links into
-              short, shareable URLs through an integrated API. The frontend was
-              developed with React for smooth interactivity and Tailwind CSS for
-              a modern, responsive design. The app includes features like quick
-              link generation, one-click copy, and a clean interface for easy
-              management of shortened links.
-            </p>
-
-            <a href="https://url-scissors.netlify.app/" target="_blank"
-              >Live Demo <img src="./assets/export.png" alt="" />
-            </a>
-          </div>
-        </div>
-
-        <!-- fifth project -->
+        <!-- third  project -->
         <div class="project">
           <div class="project-image">
             <img src="./assets/todo-app.png" alt="todo-app" />
           </div>
 
           <div class="info-project">
-            <h1>05</h1>
+            <h1>03</h1>
             <h2>Todo App</h2>
 
             <p>
@@ -350,8 +320,86 @@
           </div>
         </div>
 
+        <!-- fourth project -->
+        <div class="project reverse">
+          <div class="project-image">
+            <img src="./assets/screenshot.png" alt="Eduford website" />
+          </div>
+
+          <div class="info-project">
+            <h1>04</h1>
+            <h2>Eduford university website</h2>
+
+            <p>
+              This project is a responsive and user-friendly university website
+              designed to provide seamless access to essential academic
+              information. The goal was to create an intuitive and visually
+              appealing interface that enhances user experience for both
+              prospective and current students. Built using HTML and CSS.
+            </p>
+
+            <a
+              href="https://edufordwebsite-ibukunoluwa.netlify.app/"
+              target="_blank"
+            >
+              Live demo <img src="./assets/export.png" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <!-- fifth  project -->
+        <div class="project">
+          <div class="project-image">
+            <img src="./assets/desktop-preview.jpg" alt="multi-step form" />
+          </div>
+
+          <div class="info-project">
+            <h1>05</h1>
+            <h2>Multi-step Form</h2>
+
+            <p>
+              A dynamic multi-step webpage that collects user input, allows them
+              to choose a monthly or yearly plan, select add-ons, and displays a
+              real-time bill summary based on their choices. The form is
+              properly validated to ensure accurate user input and a smooth
+              experience. Built with HTML, CSS and Javascript.
+            </p>
+
+            <a
+              href="https://multi-step-form-website.netlify.app/"
+              target="_blank"
+              >Live Demo <img src="./assets/export.png" alt="" />
+            </a>
+          </div>
+        </div>
+
         <!-- sixth project -->
         <div class="project reverse">
+          <div class="project-image">
+            <img src="./assets/url-shortener.png" alt="url-shortner" />
+          </div>
+
+          <div class="info-project">
+            <h1>06</h1>
+            <h2>URL Shortening App</h2>
+
+            <p>
+              I built a URL shortening application that converts long links into
+              short, shareable URLs through an integrated API. The frontend was
+              developed with React for smooth interactivity and Tailwind CSS for
+              a modern, responsive design. The app includes features like quick
+              link generation, one-click copy, and a clean interface for easy
+              management of shortened links.
+            </p>
+
+            <a href="https://url-scissors.netlify.app/" target="_blank"
+              >Live Demo <img src="./assets/export.png" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <!-- seventh project -->
+        <!-- <div class="project reverse">
           <div class="project-image">
             <img src="./assets/x35fo4g0mcmxbl9ht02l.jpg" alt="newspage" />
           </div>
@@ -372,7 +420,7 @@
               Live Demo<img src="./assets/export.png" alt="" />
             </a>
           </div>
-        </div>
+        </div> -->
       </section>
 
       <section class="contact" id="contact">

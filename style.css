@@ -382,6 +382,10 @@ footer {
     visibility: visible;
 }
 
+b {
+    color: white;
+    font-weight: 800;
+}
 
 /* .show-skill{
     opacity: 1;
